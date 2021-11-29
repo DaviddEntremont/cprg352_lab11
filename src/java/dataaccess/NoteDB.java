@@ -24,9 +24,6 @@ public class NoteDB {
         
         try {
             Note note = em.find(Note.class, noteId);
-            // System.out.println("first name: " + note.getOwner().getFirstName());
-            // get all notes of the same owner as that note
-            // List<Note> notes = note.getOwner().getNoteList();
             return note;
         } finally { 
             em.close();
